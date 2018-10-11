@@ -1,36 +1,86 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>CJ Vaughn Bio</title>
-    </head>
 
-    <body>
+<head>
+    <title>CJ Vaughn Bio</title>
+    <style>
+        body {
+            background-color: rgb(211, 37, 202);
+            color: rgb(245, 241, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
 
-        <h1>CJ VAUGHN</h1> 
+        h1 {
 
-        <img src = "C:\Users\cjvau\Downloads\CJ_Pic.jpg" height = "200px" width = "200px" alt = "Picture of CJ Vaughn">
+            font-size: 75px;
+            text-decoration: underline;
 
-        <p>
-            Hello, my name is CJ. I'm a Product Support Specialist for Garmin International and I'm looking to break into the coding world. I'm a 
-            former United States Naval Officer, Twitch streamer/speedrunner, father, and soon to be husband. 
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        .container img {
+            float: left;
+            margin-right: 30px;
+        }
+
+        ul {
+            margin: 0;
+            vertical-align: middle;
+            list-style: none;
+        }
+
+        .favorite {
+            margin-top: 50px;
+        }
+
+        .contact{
+            margin-top: 100px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CJ VAUGHN</h1>
+    <div class=container>
+        <img src="C:\Users\cjvau\Downloads\CJ_Pic.jpg" height="200px" width="200px" alt="Picture of CJ Vaughn">
+
+        <p class="descriptions">
+            Hello, my name is CJ. I'm a Product Support Specialist for Garmin International and I'm looking to break
+            into the coding world. I'm a
+            former United States Naval Officer, Twitch streamer/speedrunner, father, and soon to be husband.
         </p>
-
+    </div>
+    <div class="favorite">
         <h2>My Favorite Things</h2>
 
         <ul>
             <li>Video games</li>
             <li>Comedy</li>
-            <li>Chocolate</li> 
+            <li>Chocolate</li>
         </ul>
 
-        <h3>Contact Info</h3> 
+    </div>
+
+    <div class="contact">
+
+        <h3>Contact Info</h3>
 
         <ul>
-            <li>Email: <a href = "mailto:cjvaughn@rocketmail.com">cjvaughn@rocketmail.com</a></li>
-            <li>Github: <a href = "https://github.com/RawKitMan">https://github.com/RawKitMan</a></li>
+            <li>Email: <a href="mailto:cjvaughn@rocketmail.com">cjvaughn@rocketmail.com</a></li>
+            <li>Github: <a href="https://github.com/RawKitMan">https://github.com/RawKitMan</a></li>
             <li>Phone: (619) 862-8658</li>
         </ul>
+    </div>
 
-    </body>
+</body>
+
 </html>
