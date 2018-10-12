@@ -6,80 +6,163 @@
     <title>CJ Vaughn Bio</title>
     <style>
         body {
-            background-color: rgb(211, 37, 202);
-            color: rgb(245, 241, 0);
+
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
+            background-color: black;
+            color: white;
+
+        }
+
+
+
+        @keyframes flashing {
+            0% {
+                background-color: red
+            }
+
+            ;
+
+            25% {
+                background-color: blue
+            }
+
+            ;
+
+            50% {
+                background-color: pink
+            }
+
+            ;
+
+            75% {
+                background-color: orange
+            }
+
+            ;
+
+            100% {
+                background-color: yellow
+            }
+
+            ;
+        }
+
+        #header {
+            animation: flashing;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            font-size: 4em;
             text-align: center;
-        }
-
-        h1 {
-
-            font-size: 75px;
-            text-decoration: underline;
 
         }
 
-        img {
-            display: block;
-            margin: auto;
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 200px 200px;
+            justify-content: space-around;
+            grid-gap: 75px;
+
         }
 
-        .container img {
-            float: left;
-            margin-right: 30px;
+        .container .description {
+            text-align: center;
+            grid-area: 1 / 1 / span 1 / span 2;
         }
 
-        ul {
-            margin: 0;
-            vertical-align: middle;
+        .container .favorite {
+            text-align: center;
+            grid-area: 2/2/span 1/span 1;
             list-style: none;
         }
 
-        .favorite {
-            margin-top: 50px;
+        .container .contacts {
+            text-align: center;
+            grid-area: 2/1/span 1/span 1;
+
         }
 
-        .contact{
-            margin-top: 100px;
-            font-size: 40px;
+        .container .contacts ul {
+            list-style: none;
+        }
+
+        .container .favorite ul {
+            list-style: none;
+        }
+
+        .random p{
+            position: absolute;
+            top: 750px;
+            left: 750px;
+            background-color: yellow;
+            height: 150px;
+            width: 200px;
+            margin-bottom: 30px;
+        }
+
+        .random img{
+            position: relative;
+            top: 230px;
+            left: 600px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>CJ VAUGHN</h1>
-    <div class=container>
-        <img src="C:\Users\cjvau\Downloads\CJ_Pic.jpg" height="200px" width="200px" alt="Picture of CJ Vaughn">
+    <div id="header">
+        <h1>CJ VAUGHN</h1>
+    </div>
 
-        <p class="descriptions">
-            Hello, my name is CJ. I'm a Product Support Specialist for Garmin International and I'm looking to break
-            into the coding world. I'm a
-            former United States Naval Officer, Twitch streamer/speedrunner, father, and soon to be husband.
+    <div class="container">
+        <div class="description">
+            <img src="C:\Users\cjvau\Downloads\CJ_Pic.jpg" height="200px" width="200px" alt="Picture of CJ Vaughn">
+
+            <p>
+                Hello, my name is CJ. I'm a Product Support Specialist for Garmin International and I'm looking to
+                break
+                into the coding world. I'm a
+                former United States Naval Officer, Twitch streamer/speedrunner, father, and soon to be husband.
+            </p>
+        </div>
+
+        <div class="favorite">
+
+            <h2>My Favorite Things</h2>
+
+            <ul>
+                <li>Video games</li>
+                <li>Comedy</li>
+                <li>Chocolate</li>
+            </ul>
+
+        </div>
+
+        <div class="contacts">
+
+            <h2>Contact Info</h2>
+
+            <ul>
+                <li>Email: <a href="mailto:cjvaughn@rocketmail.com">cjvaughn@rocketmail.com</a></li>
+                <li>Github: <a href="https://github.com/RawKitMan">https://github.com/RawKitMan</a></li>
+                <li>Phone: (619) 862-8658</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="random">
+        <p>
+            Here, I'm putting in a text explaining how I can move the text around to a point on the page to be wherever
+            I want it to be. Hopefully
+            this works.
         </p>
-    </div>
-    <div class="favorite">
-        <h2>My Favorite Things</h2>
 
-        <ul>
-            <li>Video games</li>
-            <li>Comedy</li>
-            <li>Chocolate</li>
-        </ul>
-
+        <img src="https://pixel.nymag.com/imgs/daily/vulture/2018/10/04/04-captain-america.w330.h330.jpg" alt = "Captain America">
     </div>
 
-    <div class="contact">
+    
 
-        <h3>Contact Info</h3>
-
-        <ul>
-            <li>Email: <a href="mailto:cjvaughn@rocketmail.com">cjvaughn@rocketmail.com</a></li>
-            <li>Github: <a href="https://github.com/RawKitMan">https://github.com/RawKitMan</a></li>
-            <li>Phone: (619) 862-8658</li>
-        </ul>
-    </div>
 
 </body>
 
